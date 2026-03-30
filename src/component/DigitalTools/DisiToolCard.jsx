@@ -8,7 +8,7 @@ const DisiToolCard = ({ data, cart, setCart }) => {
   let { name, description, price, period, tagType, features } = data;
   return (
     <div className="">
-      <div className="card w-96 bg-base-100 shadow-sm">
+      <div className="card h-full bg-base-100 shadow-sm">
         <div className="card-body">
           <span className="badge badge-xs badge-warning ">{tagType}</span>
           <div className="">

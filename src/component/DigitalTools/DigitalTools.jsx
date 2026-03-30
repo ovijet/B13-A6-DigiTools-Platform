@@ -56,7 +56,7 @@ const DigitalTools = ({ dataApi, activeTab, setActiveTab }) => {
         </div>
       )}
 
-      {activeTab === "cart" && <DigiCard cart={cart} />}
+      {activeTab === "cart" && <DigiCard cart={cart} setCart={setCart} />}
     </>
   );
 };
