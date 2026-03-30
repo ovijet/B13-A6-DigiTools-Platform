@@ -1,7 +1,11 @@
 import React from "react";
 
-const DisiToolCard = ({ data }) => {
-  let { name, description, price, period, tag, tagType, features, icon } = data;
+const DisiToolCard = ({ data, cart, setCart }) => {
+  let handleAddToCart = () => {
+    setCart([...cart,data]);
+  };
+
+  let { name, description, price, period, tagType, features } = data;
   return (
     <div className="">
       <div className="card w-96 bg-base-100 shadow-sm">
@@ -84,7 +88,12 @@ const DisiToolCard = ({ data }) => {
             </li>
           </ul>
           <div className="mt-6">
-            <button className="btn text-white bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] btn-block rounded-full">Buy Now</button>
+            <button
+              onClick={handleAddToCart}
+              className="btn text-white bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] btn-block rounded-full"
+            >
+              Buy Now
+            </button>
           </div>
         </div>
       </div>

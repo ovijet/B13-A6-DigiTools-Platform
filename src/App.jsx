@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import DigitalTools from "./component/DigitalTools/DigitalTools";
 import Header from "./component/header/Header";
@@ -10,15 +10,16 @@ let fakeApi = async () => {
 };
 
 function App() {
+  const [activeTab, setActiveTab] = useState('products')
   const dataApi = fakeApi();
-  console.log(dataApi);
+  // console.log(dataApi);
   return (
     <>
       <Header></Header>
       <Hero></Hero>
 
       <Suspense fallback={<h1>ovi.............</h1>}>
-        <DigitalTools dataApi={dataApi}></DigitalTools>
+        <DigitalTools dataApi={dataApi} activeTab={activeTab} setActiveTab={setActiveTab}></DigitalTools>
       </Suspense>
     </>
   );
