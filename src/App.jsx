@@ -3,6 +3,7 @@ import "./App.css";
 import DigitalTools from "./component/DigitalTools/DigitalTools";
 import Header from "./component/header/Header";
 import Hero from "./component/header/hero/HeroSection";
+import GetStarted from "./component/GetStarted/GetStarted";
 
 let fakeApi = async () => {
   let res = await fetch("/package.json");
@@ -21,6 +22,8 @@ function App() {
       <Suspense fallback={<h1>ovi.............</h1>}>
         <DigitalTools dataApi={dataApi} activeTab={activeTab} setActiveTab={setActiveTab}></DigitalTools>
       </Suspense>
+      
+      <GetStarted></GetStarted>
     </>
   );
 }
