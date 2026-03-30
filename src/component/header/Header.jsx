@@ -34,7 +34,7 @@ const Header = () => {
               <li>FAQ</li>
             </ul>
           </div>
-          <a className=" font-bold text-red-300 text-3xl">DigiTools</a>
+          <a className=" font-bold bg-gradient-to-b from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] bg-clip-text text-transparent text-4xl font-bold text-3xl">DigiTools</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-5 text-lg">

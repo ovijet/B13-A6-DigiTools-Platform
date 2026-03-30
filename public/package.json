@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Resume Builder",
+    "description": "Build professional resumes with AI-powered templates.",
+    "price": "$29/",
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF", "Resume analytics"],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Premium Templates Pack",
+    "description": "Access 500+ ready-to-use templates for resumes and portfolios.",
+    "price": "$15/",
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["500+ templates", "Regular updates", "Customizable designs", "Priority support"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "AI Cover Letter",
+    "description": "Generate cover letters in seconds using AI.",
+    "price": "$9/",
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["AI-powered", "Multiple formats", "Download PDF", "Template suggestions"],
+    "icon": "🤖"
+  },
+  {
+    "id": 4,
+    "name": "Interview Prep Toolkit",
+    "description": "Get ready for interviews with sample questions and tips.",
+    "price": "$49/",
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["100+ questions", "Expert tips", "Mock interview guide", "Video tutorials"],
+    "icon": "💼"
+  },
+  {
+    "id": 5,
+    "name": "Portfolio Website Builder",
+    "description": "Create a personal portfolio website in minutes.",
+    "price": "$19/",
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Drag & drop builder", "Custom domain", "Responsive design", "SEO tools"],
+    "icon": "🌐"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker Pro",
+    "description": "Track your job applications and follow-ups efficiently.",
+    "price": "$12/",
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["Application tracker", "Reminders", "Export CSV", "Email notifications"],
+    "icon": "📊"
+  },
+  {
+    "id": 7,
+    "name": "LinkedIn Optimization",
+    "description": "Boost your LinkedIn profile to get noticed by recruiters.",
+    "price": "$25/",
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Profile review", "Keyword optimization", "Expert tips", "Connection strategies"],
+    "icon": "🔗"
+  },
+  {
+    "id": 8,
+    "name": "Career Analytics Dashboard",
+    "description": "Get insights on your job search and applications.",
+    "price": "$20/",
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Graphs & charts", "Application stats", "Custom reports", "Trends analysis"],
+    "icon": "📈"
+  },
+  {
+    "id": 9,
+    "name": "AI Job Matcher",
+    "description": "Automatically match your skills with job openings.",
+    "price": "$35/",
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["AI-powered job matching", "Skill assessment", "Job notifications", "Resume optimization"],
+    "icon": "🧠"
+  }
+]

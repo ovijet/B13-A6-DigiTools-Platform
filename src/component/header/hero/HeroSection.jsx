@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="flex justify-center items-center gap-5 max-w-6xl mx-auto min-h-[90vh]">
         <div className="space-y-3">
           <div className="flex-row-reverse">
-            <h2 className="bg-[#E1E7FF] text-linear-to-r from-[#4f39f6] to-#fff px-4 py-1 rounded-full w-[300px]">
+            <h2 className="bg-[#E1E7FF] text-blue-500 px-4 py-1 rounded-full w-[300px]">
               New: AI-Powered Tools Available
             </h2>
           </div>
