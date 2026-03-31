@@ -4,6 +4,7 @@ import DigitalTools from "./component/DigitalTools/DigitalTools";
 import Header from "./component/header/Header";
 import Hero from "./component/header/hero/HeroSection";
 import GetStarted from "./component/GetStarted/GetStarted";
+import Pricing from "./component/pricing/Pricing";
 
 let fakeApi = async () => {
   let res = await fetch("/package.json");
@@ -24,6 +25,7 @@ function App() {
       </Suspense>
       
       <GetStarted></GetStarted>
+      <Pricing></Pricing>
     </>
   );
 }

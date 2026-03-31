@@ -9,7 +9,7 @@ const DisiToolCard = ({ data, cart, setCart }) => {
   return (
     <div className="">
       <div className="card h-full bg-base-100 shadow-sm">
-        <div className="card-body">
+        <div className="card-body flex flex-col justify-between">
           <span className="badge badge-xs badge-warning ">{tagType}</span>
           <div className="">
             <h2 className="text-3xl font-bold">{name}</h2>

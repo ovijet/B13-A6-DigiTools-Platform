@@ -4,7 +4,7 @@ import rocket from "/assets/rocket.png"
 import packag from "/assets/package.png"
 const GetStarted = () => {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 bg-[#F9FAFC] p-5 mt-5">
       <div className="text-center mt-8">
         <h1 className="text-3xl font-semibold">Get Started in 3 Steps</h1>
         <p className="text-gray-400">
@@ -12,7 +12,7 @@ const GetStarted = () => {
         </p>
       </div>
       <div>
-        <div className="grid grid-cols-3 max-w-6xl mx-auto gap-9 mt-10">
+        <div className="grid md:grid-cols-3 max-w-6xl mx-auto gap-9 mt-10">
           <div className="card w-96 bg-base-100 card-xl shadow-sm">
             <div className="card-body">
               <img
