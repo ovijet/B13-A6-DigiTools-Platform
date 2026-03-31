@@ -6,7 +6,7 @@ import Img from "/assets/Rectangle.png"
 const Hero = () => {
   return (
     <>
-      <div className="flex justify-center items-center gap-5 max-w-6xl mx-auto min-h-[90vh]">
+      <div className=" grid md:grid-cols-2 items-center gap-5 max-w-6xl mx-auto min-h-[90vh]">
         <div className="space-y-3">
           <div className="flex-row-reverse">
             <h2 className="bg-[#c8bbea] text-[rgba(79,57,246,1)] flex gap-2 items-center px-4 py-1 rounded-full w-[300px]">
@@ -33,8 +33,8 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="right mt-9 ml-10">
-          <img src={logo} alt="" className="w-[95%]" />
+        <div className="right w-[70%] mx-auto mt-20">
+          <img src={logo} alt="" className="" />
         </div>
       </div>
 

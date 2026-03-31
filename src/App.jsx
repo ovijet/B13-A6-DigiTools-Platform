@@ -7,6 +7,7 @@ import GetStarted from "./component/GetStarted/GetStarted";
 import Pricing from "./component/pricing/Pricing";
 import WorkFlow from "./component/workflow/WorkFlow";
 import Footer from "./component/Footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 let fakeApi = async () => {
   let res = await fetch("/package.json");
@@ -38,7 +39,11 @@ function App() {
       <Pricing></Pricing>
       <WorkFlow></WorkFlow>
       <Footer></Footer>
+       <ToastContainer />
     </>
+
+
+    
   );
 }
 

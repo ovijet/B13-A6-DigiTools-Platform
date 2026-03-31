@@ -4,7 +4,7 @@ import { LuShoppingCart } from "react-icons/lu";
 
 const Header = ({ cart }) => {
   return (
-    <div className="navbar bg-base-100 shadow-sm ">
+    <div className="navbar bg-base-100 shadow-sm fixed top-0 right-0 left-0 z-1">
       <div className="w-full max-w-6xl mx-auto flex">
         <div className="navbar-start">
           <div className="dropdown">

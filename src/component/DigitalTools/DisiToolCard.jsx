@@ -1,8 +1,10 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const DisiToolCard = ({ data, cart, setCart }) => {
   let handleAddToCart = () => {
     setCart([...cart, data]);
+     toast("Wow so easy!")
   };
 
   let { name, description, price, period, tagType, features } = data;
