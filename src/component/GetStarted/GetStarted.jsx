@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "/assets/user.png";
-import rocket from "/assets/rocket.png"
-import packag from "/assets/package.png"
+import rocket from "/assets/rocket.png";
+import packag from "/assets/package.png";
 const GetStarted = () => {
   return (
     <div className="space-y-3 bg-[#F9FAFC] p-5 mt-5">
@@ -14,11 +14,14 @@ const GetStarted = () => {
       <div>
         <div className="grid md:grid-cols-3 max-w-6xl mx-auto gap-9 mt-10">
           <div className="card w-96 bg-base-100 card-xl shadow-sm">
-            <div className="card-body">
+            <div className="card-body relative">
+              <p className="absolute right-2 top-2 w-[30px] h-[30px] text-[14px] text-white text-center bg-gradient-to-b from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]  rounded-full p-1">
+                01
+              </p>
               <img
                 src={logo}
                 alt=""
-                className="w-[70px] mx-auto border-red-400 border  rounded-full p-2"
+                className="w-[60px] mx-auto bg-[#c8bbea]  rounded-full p-2"
               />
               <h2 className="text-2xl text-center">create account</h2>
               <p className="text-center text-gray-500">
@@ -29,23 +32,29 @@ const GetStarted = () => {
           </div>
           <div className="card w-96 bg-base-100 card-xl shadow-sm">
             <div className="card-body">
+              <p className="absolute right-2 top-2 w-[30px] h-[30px] text-[14px] text-white text-center bg-gradient-to-b from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]  rounded-full p-1">
+                02
+              </p>
               <img
                 src={packag}
                 alt=""
-                className="w-[70px] mx-auto border-red-400 border rounded-full p-2"
+                className="w-[60px] mx-auto bg-[#c8bbea]  rounded-full p-2"
               />
               <h2 className="text-2xl text-center">Choose Products</h2>
               <p className="text-center text-gray-500">
-               Browse our catalog and select the tools that fit your needs.
+                Browse our catalog and select the tools that fit your needs.
               </p>
             </div>
           </div>
           <div className="card w-96 bg-base-100 card-xl shadow-sm">
             <div className="card-body">
+              <p className="absolute right-2 top-2 w-[30px] h-[30px] text-[14px] text-white text-center bg-gradient-to-b from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]  rounded-full p-1">
+                03
+              </p>
               <img
                 src={rocket}
                 alt=""
-                className="w-[70px] mx-auto border-red-400 border  rounded-full p-2"
+                className="w-[60px] mx-auto bg-[#c8bbea]   rounded-full p-2"
               />
               <h2 className="text-2xl text-center">Start Creating</h2>
               <p className="text-center text-gray-500">

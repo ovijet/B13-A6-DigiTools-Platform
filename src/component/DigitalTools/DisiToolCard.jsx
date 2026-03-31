@@ -2,22 +2,33 @@ import React from "react";
 
 const DisiToolCard = ({ data, cart, setCart }) => {
   let handleAddToCart = () => {
-    setCart([...cart,data]);
+    setCart([...cart, data]);
   };
 
   let { name, description, price, period, tagType, features } = data;
   return (
     <div className="">
-      <div className="card h-full bg-base-100 shadow-sm">
-        <div className="card-body flex flex-col justify-between">
-          <span className="badge badge-xs badge-warning ">{tagType}</span>
+      <div className="card h-full bg-base-100 shadow-sm space-y-4">
+        <div className="card-body flex flex-col justify-between relative ">
+          <span
+            className={`absolute right-3 top-3 text-[15px] px-2 rounded-full
+              
+              ${tagType === "new" && "bg-green-400"} 
+              ${tagType === "popular" && "bg-[#c8bbea] "} 
+              ${tagType === "best-seller" && "bg-yellow-400"} 
+            
+            
+            `}
+          >
+            {tagType}
+          </span>
           <div className="">
-            <h2 className="text-3xl font-bold">{name}</h2>
+            <h2 className="text-3xl mt-7 font-bold">{name}</h2>
             <p>{description}</p>
             <span className="text-xl">{price}</span>
             <span>{period}</span>
           </div>
-          <ul className="mt-6 flex flex-col gap-2 text-xs">
+          <ul className=" flex flex-col gap-2 ">
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

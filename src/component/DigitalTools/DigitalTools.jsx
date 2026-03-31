@@ -1,11 +1,11 @@
-import React, { use, useState } from "react";
+import React, { use, } from "react";
 import DisiToolCard from "./DisiToolCard";
 import DigiCard from "./DigiCard";
 
-const DigitalTools = ({ dataApi, activeTab, setActiveTab }) => {
+const DigitalTools = ({ dataApi, activeTab, setActiveTab,cart,setCart }) => {
   let dataUse = use(dataApi);
   // console.log(dataUse);
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
 
   // const handleAddToCart = (product) => {
   //   setCart((cart) => [...cart, product]);
@@ -29,7 +29,7 @@ const DigitalTools = ({ dataApi, activeTab, setActiveTab }) => {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full w-[110px]"
+          className="tab rounded-full w-[110px] bg-red-400"
           aria-label="Products"
           defaultChecked
           onClick={() => setActiveTab("products")}
