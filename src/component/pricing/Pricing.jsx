@@ -2,25 +2,33 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className="space-y-4">
-      <div className="text-center mt-5">
-        <h1 className="text-3xl font-semibold">simple, transparent pricing</h1>
-        <p className="text-gray-400 text-[15px]">
+    <div className="px-4 py-10 space-y-8">
+      {/* heading */}
+      <div className="text-center">
+        <h1 className="text-2xl md:text-3xl font-semibold">
+          Simple, Transparent Pricing
+        </h1>
+        <p className="text-gray-400 text-sm md:text-base">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      {/* card  */}
 
-      <div className="grid mx-auto text-center md:grid-cols-3 gap-9 md:max-w-6xl mx-auto">
-        <div className="card mx-w-[500px] bg-base-100 shadow-sm flex flex-col">
-          <div className="card-body flex flex-col justify-between bg-[#F9FAFC] ">
-            <div className="space-y-2.5">
-              <h2 className="text-3xl font-bold">starter</h2>
-              <p>perfect for getting started</p>
-              <span className="text-xl">$29/mo</span>
+      {/* cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {/* card 1 */}
+        <div className="card bg-[#F9FAFC] shadow-sm flex flex-col">
+          <div className="card-body flex flex-col justify-between h-full">
+            <div className="space-y-2">
+              <h2 className="text-2xl font-bold">Starter</h2>
+              <p className="text-sm text-gray-500">
+                Perfect for getting started
+              </p>
+              <span className="text-lg font-semibold">$29/mo</span>
             </div>
-            <ul className="mt-6 flex flex-col gap-2 text-xs">
-              <li>
+
+            <ul className="mt-5 space-y-2 text-sm">
+              <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -28,16 +36,18 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>High-resolution image generation</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Access to 10 free tools</span>{" "}
               </li>
-              <li>
+              <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -45,16 +55,18 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Customizable style templates</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Basic templates</span>{" "}
               </li>
-              <li>
+              <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -62,16 +74,18 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Batch processing capabilities</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Community support</span>{" "}
               </li>
-              <li>
+              <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -79,38 +93,40 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>AI-driven image enhancements</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">1 project per month</span>{" "}
               </li>
             </ul>
-            <div className="mt-6">
-              <button className="btn btn-primary btn-block rounded-full bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]">
-                Subscribe
-              </button>
-            </div>
+
+            <button className="btn mt-6 rounded-full bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white">
+              Get Started Free
+            </button>
           </div>
         </div>
-        {/* card2 */}
-        <div className="">
-          <div className="card-body  rounded-xl flex flex-col justify-between  bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white">
-            <div className="">
-              <span className="badge relative  bottom-10 left-30 p-3 badge-xs badge-warning">
-                Most Popular
-              </span>
+
+        {/* card 2 (featured) */}
+        <div className="card bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white shadow-md flex flex-col relative">
+          <span className="absolute -top-3 left-1/2 -translate-x-1/2 badge badge-warning px-3 py-2 text-xs">
+            Most Popular
+          </span>
+
+          <div className="card-body flex flex-col justify-between h-full">
+            <div className="space-y-2 mt-2">
+              <h2 className="text-2xl font-bold">Pro</h2>
+              <p className="text-sm text-gray-200">Best for Professionals</p>
+              <span className="text-lg font-semibold">$49/mo</span>
             </div>
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold">Pro</h2>
-              <p>Best for Professionals</p>
-              <span className="text-xl">$29/Month</span>
-            </div>
-            <ul className="mt-6 flex flex-col gap-2 text-xs">
-              <li>
+
+            <ul className="mt-5 space-y-2 text-sm">
+              <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -118,67 +134,18 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>High-resolution image generation</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Customizable style templates</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Batch processing capabilities</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>AI-driven image enhancements</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Access to all premium tools</span>{" "}
               </li>
               <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -186,16 +153,18 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span className="">Seamless cloud integration</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Unlimited templates</span>{" "}
               </li>
               <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -203,34 +172,93 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span className="">Real-time collaboration tools</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Priority support</span>{" "}
+              </li>
+              <li className="">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {" "}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />{" "}
+                </svg>{" "}
+                <span className="">Cloud sync</span>{" "}
+              </li>
+              <li className="">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {" "}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />{" "}
+                </svg>{" "}
+                <span className="">Unlimited projects</span>{" "}
+              </li>
+              <li className="">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {" "}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />{" "}
+                </svg>{" "}
+                <span className="">Advanced analytics</span>{" "}
               </li>
             </ul>
-            <div className="mt-6">
-              <button className="btn text-[rgba(79,57,246,1)] btn-block rounded-full">
-                Subscribe
-              </button>
-            </div>
+
+            <button className="btn mt-6 rounded-full bg-white text-purple-600 hover:bg-gray-100">
+              Start pro Trial
+            </button>
           </div>
         </div>
-        {/* card3 */}
-        <div className="">
-          <div className="card-body flex flex-col justify-between bg-[#F9FAFC] ">
-            {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold">Enterprise</h2>
-              <p>For teams and businesses</p>
-              <span className="text-xl">$99/Month</span>
+
+        {/* card 3 */}
+        <div className="card bg-[#F9FAFC] shadow-sm flex flex-col">
+          <div className="card-body flex flex-col justify-between h-full">
+            <div className="space-y-2">
+              <h2 className="text-2xl font-bold">Enterprise</h2>
+              <p className="text-sm text-gray-500">For teams and businesses</p>
+              <span className="text-lg font-semibold">$99/mo</span>
             </div>
-            <ul className="mt-6 flex flex-col gap-2 text-xs">
-              <li>
+
+            <ul className="mt-5 space-y-2 text-sm">
+              <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -238,67 +266,18 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>High-resolution image generation</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Customizable style templates</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>Batch processing capabilities</span>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 me-2 inline-block text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span>AI-driven image enhancements</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Everything in Pro</span>{" "}
               </li>
               <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -306,16 +285,18 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span className="">Seamless cloud integration</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Team collaboration</span>{" "}
               </li>
               <li className="">
+                {" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
@@ -323,21 +304,59 @@ const Pricing = () => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M5 13l4 4L19 7"
-                  />
-                </svg>
-                <span className="">Real-time collaboration tools</span>
+                  />{" "}
+                </svg>{" "}
+                <span className="">Custom integrations</span>{" "}
+              </li>
+              <li className="">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {" "}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />{" "}
+                </svg>{" "}
+                <span className="">Dedicated support</span>{" "}
+              </li>
+              <li className="">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {" "}
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />{" "}
+                </svg>{" "}
+                <span className="">SLA guarantee</span>{" "}
               </li>
             </ul>
-            <div className="mt-6">
-              <button className="btn btn-primary btn-block rounded-full bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]">
-                Subscribe
-              </button>
-            </div>
+
+            <button className="btn mt-6 rounded-full bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white">
+              Contact Sales
+            </button>
           </div>
         </div>
       </div>
