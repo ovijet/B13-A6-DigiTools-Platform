@@ -25,7 +25,7 @@ function App() {
       <Header cart={cart}></Header>
       <Hero></Hero>
 
-      <Suspense fallback={<h1>ovi.............</h1>}>
+       <Suspense fallback={<h1>ovi.............</h1>}>
         <DigitalTools
           dataApi={dataApi}
           activeTab={activeTab}
@@ -35,11 +35,11 @@ function App() {
         ></DigitalTools>
       </Suspense>
 
-      <GetStarted></GetStarted>
+       <GetStarted></GetStarted>
       <Pricing></Pricing>
       <WorkFlow></WorkFlow>
       <Footer></Footer>
-       <ToastContainer />
+       <ToastContainer /> 
     </>
 
 

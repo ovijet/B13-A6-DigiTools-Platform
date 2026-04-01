@@ -1,13 +1,13 @@
 import React from "react";
 import logo from "/assets/banner.png";
 import { CiPlay1 } from "react-icons/ci";
-import Img from "/assets/Rectangle.png"
+import Img from "/assets/Rectangle.png";
 
 const Hero = () => {
   return (
     <>
-      <div className=" grid md:grid-cols-2 items-center gap-5 max-w-6xl mx-auto min-h-[90vh]">
-        <div className="space-y-3">
+      <div className="grid z-2 md:grid-cols-2 items-center gap-5 max-w-6xl mx-auto min-h-[90vh]">
+        <div className="space-y-3 order-2 md:order-1">
           <div className="flex-row-reverse">
             <h2 className="bg-[#c8bbea] text-[rgba(79,57,246,1)] flex gap-2 items-center px-4 py-1 rounded-full w-[300px]">
               <img src={Img} alt="" /> New: AI-Powered Tools Available
@@ -33,24 +33,25 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="right w-[70%] mx-auto mt-20">
-          <img src={logo} alt="" className="" />
+        <div className="right w-full max-w-[400px] mx-auto mt-20 order-1 md:order-2">
+          <img src={logo} alt="" className="w-full h-auto" />
         </div>
       </div>
 
-      <div className="flex justify-center items-center gap-10 bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] h-30 text-white">
-        <div>
-          <h1 className="text-4xl font-bold mr-9">50k+</h1>
-          <p className="text-md text-gray-300">Active Users</p>
-          
+      <div className="flex flex-col mt-10 md:flex-row justify-center items-center gap-6 md:gap-10 bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] py-6 text-white">
+        <div className="text-center">
+          <h1 className="text-3xl md:text-4xl font-bold">50k+</h1>
+          <p className="text-sm md:text-md text-gray-300">Active Users</p>
         </div>
-        <div>
-          <h1 className="text-4xl font-bold mr-9">200k+</h1>
-          <p className="text-md text-gray-300">Premium Tools</p>
+
+        <div className="text-center">
+          <h1 className="text-3xl md:text-4xl font-bold">200k+</h1>
+          <p className="text-sm md:text-md text-gray-300">Premium Tools</p>
         </div>
-        <div>
-          <h1 className="text-4xl font-bold mr-9">4.9</h1>
-          <p className="text-md text-gray-300">Rating</p>
+
+        <div className="text-center">
+          <h1 className="text-3xl md:text-4xl font-bold">4.9</h1>
+          <p className="text-sm md:text-md text-gray-300">Rating</p>
         </div>
       </div>
     </>

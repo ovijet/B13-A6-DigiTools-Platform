@@ -11,8 +11,8 @@ const Pricing = () => {
       </div>
       {/* card  */}
 
-      <div className="grid md:grid-cols-3 gap-9 max-w-6xl mx-auto">
-        <div className="card w-96 bg-base-100 shadow-sm flex flex-col">
+      <div className="grid mx-auto text-center md:grid-cols-3 gap-9 md:max-w-6xl mx-auto">
+        <div className="card mx-w-[500px] bg-base-100 shadow-sm flex flex-col">
           <div className="card-body flex flex-col justify-between bg-[#F9FAFC] ">
             <div className="space-y-2.5">
               <h2 className="text-3xl font-bold">starter</h2>
@@ -90,15 +90,19 @@ const Pricing = () => {
               </li>
             </ul>
             <div className="mt-6">
-              <button className="btn btn-primary btn-block rounded-full bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]">Subscribe</button>
+              <button className="btn btn-primary btn-block rounded-full bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
         {/* card2 */}
-        <div className="card w-96 bg-base-100 shadow-sm flex flex-col">
+        <div className="">
           <div className="card-body  rounded-xl flex flex-col justify-between  bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] text-white">
             <div className="">
-              <span className="badge relative  bottom-10 left-30 p-3 badge-xs badge-warning">Most Popular</span>
+              <span className="badge relative  bottom-10 left-30 p-3 badge-xs badge-warning">
+                Most Popular
+              </span>
             </div>
             <div className="space-y-3">
               <h2 className="text-3xl font-bold">Pro</h2>
@@ -192,7 +196,7 @@ const Pricing = () => {
                 <span className="">Seamless cloud integration</span>
               </li>
               <li className="">
-             <svg
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
@@ -206,18 +210,18 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="">
-                  Real-time collaboration tools
-                </span>
+                <span className="">Real-time collaboration tools</span>
               </li>
             </ul>
             <div className="mt-6">
-              <button className="btn text-[rgba(79,57,246,1)] btn-block rounded-full">Subscribe</button>
+              <button className="btn text-[rgba(79,57,246,1)] btn-block rounded-full">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
         {/* card3 */}
-        <div className="card w-96 bg-base-100 shadow-sm   flex flex-col">
+        <div className="">
           <div className="card-body flex flex-col justify-between bg-[#F9FAFC] ">
             {/* <span className="badge badge-xs badge-warning">Most Popular</span> */}
             <div className="space-y-4">
@@ -312,7 +316,7 @@ const Pricing = () => {
                 <span className="">Seamless cloud integration</span>
               </li>
               <li className="">
-             <svg
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="size-4 me-2 inline-block text-success"
                   fill="none"
@@ -326,13 +330,13 @@ const Pricing = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <span className="">
-                  Real-time collaboration tools
-                </span>
+                <span className="">Real-time collaboration tools</span>
               </li>
             </ul>
             <div className="mt-6">
-              <button className="btn btn-primary btn-block rounded-full bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]">Subscribe</button>
+              <button className="btn btn-primary btn-block rounded-full bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>

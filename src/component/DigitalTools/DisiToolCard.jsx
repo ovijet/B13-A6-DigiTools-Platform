@@ -4,14 +4,17 @@ import { toast } from "react-toastify";
 const DisiToolCard = ({ data, cart, setCart }) => {
   let handleAddToCart = () => {
     setCart([...cart, data]);
-     toast("Wow so easy!")
+    toast("Wow so easy!");
   };
 
-  let { name, description, price, period, tagType, features } = data;
+  let { name, description, price, period, tagType, features, icon } = data;
   return (
     <div className="">
       <div className="card h-full bg-base-100 shadow-sm space-y-4">
-        <div className="card-body flex flex-col justify-between relative ">
+        <div className="card-body h-full flex flex-col justify-between relative flex-grow-0">
+          <p className="text-2xl p-2 flex items-center justify-center border rounded-full w-fit h-fit">
+            {icon}
+          </p>
           <span
             className={`absolute right-3 top-3 text-[15px] px-2 rounded-full
               
