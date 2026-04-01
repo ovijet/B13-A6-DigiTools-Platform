@@ -28,14 +28,14 @@ const DigiCard = ({ cart, setCart }) => {
         return (
           <>
             <div className="mt-5">
-              <div className="flex justify-between rounded-2xl w-[80%] p-4 border items-center   border-red-400 max-w-6xl mx-auto">
+              <div className="flex justify-between rounded-2xl w-[80%] p-4 border  items-center   border-[rgba(79,57,246,1)] max-w-6xl mx-auto">
                 <div>
                   <h2 className="text-xl font-semibold"> {addCard.name}</h2>
                   <p>{addCard.price}</p>
                 </div>
                 <div>
                   <p
-                    className="text-red-500 text-xl"
+                    className="text-[red] text-xl"
                     onClick={() => handleDelete(addCard)}
                   >
                     Remove
