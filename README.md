@@ -10,7 +10,7 @@ Built With
 
 Features
 
-    Browse 6 premium digital products and add them to cart
+    Browse 9 premium digital products and add them to cart
     Cart shows selected items with total price and remove option
     Toast notifications for add to cart, remove, and checkout actions
 
