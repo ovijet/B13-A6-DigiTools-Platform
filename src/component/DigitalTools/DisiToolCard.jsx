@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 const DisiToolCard = ({ data, cart, setCart }) => {
   let handleAddToCart = () => {
     const isFound = cart.find((item) => item.id === data.id);
     console.log(isFound);
+    // setSelected(true);
 
     if (isFound) {
       toast.error("Item already in cart");
-      return
+      return;
     }
 
     setCart([...cart, data]);
-    toast("Wow so easy!");
+    toast("Added to cart!");
   };
 
   let { name, description, price, period, tagType, features, icon } = data;
+  let [selected, setSelected] = useState(false);
+
   return (
     <div className="">
       <div className="card h-full bg-base-100 shadow-sm overflow-hidden space-y-4">
@@ -29,8 +32,6 @@ const DisiToolCard = ({ data, cart, setCart }) => {
               ${tagType === "new" && "bg-green-400"} 
               ${tagType === "popular" && "bg-[#c8bbea] "} 
               ${tagType === "best-seller" && "bg-yellow-400"} 
-            
-            
             `}
           >
             {tagType}
@@ -113,10 +114,17 @@ const DisiToolCard = ({ data, cart, setCart }) => {
           </ul>
           <div className="mt-6">
             <p
-              onClick={handleAddToCart}
-              className="btn text-white bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] btn-block rounded-full"
+              onClick={() => {
+                handleAddToCart();
+                setSelected(true);
+              }}
+              className={`btn text-white btn-block rounded-full ${
+                selected
+                  ? "bg-green-500"
+                  : "bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]"
+              }`}
             >
-              Buy Now
+              {selected ? "Added card" : "Buy now"}
             </p>
           </div>
         </div>
