@@ -3,6 +3,14 @@ import { toast } from "react-toastify";
 
 const DisiToolCard = ({ data, cart, setCart }) => {
   let handleAddToCart = () => {
+    const isFound = cart.find((item) => item.id === data.id);
+    console.log(isFound);
+
+    if (isFound) {
+      toast.error("Item already in cart");
+      return
+    }
+
     setCart([...cart, data]);
     toast("Wow so easy!");
   };
@@ -10,9 +18,9 @@ const DisiToolCard = ({ data, cart, setCart }) => {
   let { name, description, price, period, tagType, features, icon } = data;
   return (
     <div className="">
-      <div className="card h-full bg-base-100 shadow-sm space-y-4">
-        <div className="card-body h-full flex flex-col justify-between relative flex-grow-0">
-          <p className="text-2xl p-2 flex items-center justify-center border rounded-full w-fit h-fit">
+      <div className="card h-full bg-base-100 shadow-sm overflow-hidden space-y-4">
+        <div className="card-body  h-full flex flex-col justify-between relative">
+          <p className="text-2xl p-2 flex items-center justify-center border border-gray-200 flex-grow-0 rounded-full w-fit h-fit">
             {icon}
           </p>
           <span
@@ -104,12 +112,12 @@ const DisiToolCard = ({ data, cart, setCart }) => {
             </li>
           </ul>
           <div className="mt-6">
-            <button
+            <p
               onClick={handleAddToCart}
               className="btn text-white bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] btn-block rounded-full"
             >
               Buy Now
-            </button>
+            </p>
           </div>
         </div>
       </div>

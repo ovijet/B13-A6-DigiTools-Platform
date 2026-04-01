@@ -18,7 +18,7 @@ const DigiCard = ({ cart, setCart }) => {
 
   const handleCheckout = () => {
     setCart([]);
-    toast.info("Proceed to Checkout!");
+    toast.info("All Card remove!");
   };
   return (
     <div className=" mt-10 shadow-2xl container mx-auto">

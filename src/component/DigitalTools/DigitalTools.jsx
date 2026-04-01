@@ -21,22 +21,24 @@ const DigitalTools = ({ dataApi, activeTab, setActiveTab, cart, setCart }) => {
       </div>
 
       {/* Tabs */}
-      <div className="tabs tabs-box justify-center bg-transparent mt-5 border-none">
-        <input
-          type="radio"
-          name="my_tabs_1"
-          className="tab rounded-full px-4 py-2"
-          aria-label="Products"
-          defaultChecked
+      <div className="text-center mt-5 rounded-full">
+        <button
           onClick={() => setActiveTab("products")}
-        />
-        <input
-          type="radio"
-          name="my_tabs_1"
-          className="tab rounded-full px-4 py-2"
-          aria-label={`Cart (${cart.length})`}
+          className={`btn text-black border-none rounded-full transition-colors ${
+            activeTab === "products" ? " text-white bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)] " : "bg-white"
+          }`}
+        >
+          Products
+        </button>
+
+        <button
           onClick={() => setActiveTab("cart")}
-        />
+          className={`btn text-black border-none rounded-full transition-colors ${
+            activeTab === "cart" ? "text-white bg-gradient-to-r from-[rgba(79,57,246,1)] to-[rgba(149,20,250,1)]" : "bg-white"
+          }`}
+        >
+          {`cart (${cart.length})`}
+        </button>
       </div>
 
       {/* Products Grid */}
